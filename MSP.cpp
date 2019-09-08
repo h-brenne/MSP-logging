@@ -152,6 +152,7 @@ bool MSP::command(uint8_t messageID, void * payload, uint8_t size, bool waitACK)
 
 // map MSP_MODE_xxx to box ids
 // mixed values from cleanflight and inav
+// https://github.com/betaflight/betaflight/blob/4f923e4827d2595881a9eed7c933d1c84817053c/src/main/msp/msp_protocol.h
 static const uint8_t BOXIDS[30] PROGMEM = {
   0,  //  0: MSP_MODE_ARM
   1,  //  1: MSP_MODE_ANGLE
